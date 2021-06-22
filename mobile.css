@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Satisfy', cursive; */
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: aliceblue;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    font-size: 1.2r;
+        color: aliceblue;
+    text-decoration: none;
+}
+  /* For Desktop: */
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+    }
+ /* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+}
+
+.navbar{
+    background-color: rgb(1, 45, 48);
+    text-align: center;
+    padding: 1% 7%;
+}
+img{
+    width: 100px;
+    height: 100px;
+    justify-content: left;
+
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.navbar::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    background-color: rgb(5, 60, 60);
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 10px;
+}
+.nav-menu a:hover{
+    background-color: rgb(77, 59, 3);
+}
+.nav-head p{
+    font-size: 20px;
+    text-align: center;
+}
+/* navbar ends */
+/* profile starts */
+
+.portfolio{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+.portfolio .top-wh{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    transition: transform 2s;
+}
+.portfolio .top-wh:hover{
+    
+    transform:rotate(360deg);
+}
+.sa{
+    font-family: 'Satisfy';
+    color: black;
+    top: 0px;
+}
+.pa{
+   color: gray; 
+   text-align: center;
+   width: 90%;
+}
+
+.bottom-wh{
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    transition: transform 2s;
+}
+.bottom-wh:hover{
+    
+    transform:rotate(360deg);
+
+
+}
+.kk{
+    background-color: brown;
+    width: 500px;
+    height: 1000px;
+    text-align: center;
+    font-size: 8rem;
+}
+
+/* profile endss */
+
+/* about me starts */
+.about-me{
+    background-color: rgb(1, 45, 48);
+    color: aliceblue;
+    padding: 1px 7px;
+    text-align: center;
+    margin: 20px;
+}
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.img1 img{
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+
+}
+.about-me p{
+    text-align: center;
+    padding: 20px;
+}
+.about-me a{
+    text-align: center;
+    font-size: 1rem;
+}
+.cv-button{
+    background-color: aquamarine;
+    display: inline;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* about me endss */
+
+/* profession stars */
+
+.work-experiance p{
+    padding: 4% 0;
+    margin: 5px;
+    font-size: 1.2rem;
+    
+}
+.work-experiance .card{
+    background-color: grey;
+    border: 2px solid rgb(172, 135, 135);
+    border-radius: 10px;
+    transition: 0.3s;
+    height: 620px;
+}
+.work-experiance .card:hover{
+    box-shadow: 0 5px 4px 5px black;
+}
+.card-icon{
+    text-align: center;
+}
+.card-round{
+    border: 2px solid  rgb(68, 84, 87);
+    border-radius: 50%;
+    padding: 10px;
+}
+.card-head h2{
+    background-color: rgb(68, 84, 87);
+    color: aliceblue;
+    padding: 10px;
+}
+.work-experiance::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+.skill-container{
+    padding: 2px;
+    
+}
+.skill-container li{
+    list-style: none;
+    margin: 40px 0px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    /* top: 30px; */
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+    background-color: rgb(68, 84, 87);
+}
+.skill-container li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 25px;
+    /* top: 25px; */
+    top: calc(100% + 5px);
+    border-radius: 10px;
+    left: 0;
+    background-color: rgb(15, 47, 53);
+     
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    }
+.skill-container li::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+/* profession stars */
+/* achievement contact starts */
+.achievement-contact{
+    padding: 1% 5%;
+    background-color: rgb(41, 107, 85);
+    color: aliceblue;
+}
+
+.contact-me p{
+    text-align: center;
+    font-size: 1rem;
+}
+.contact-me input, textarea{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    resize: none;
+
+}
+.contact-me button{
+    background-color: rgb(15, 47, 53);
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+        
+}
+.achievement-contact::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+
+.social-media{
+    padding: 5px 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn{
+    border: 2px solid aqua;
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: rgb(255, 145, 0);
+    transition: 1s;
+   
+}
+.btn:hover{
+    background-color: rgb(22, 235, 224);
+}
+/* achievement contact starts */
+/* footer */
+.footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+
+}
+.footer a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+.footer a:hover{
+    color: rgb(167, 97, 13);
+    
+}
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+
+}

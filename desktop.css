@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.nav-logo{
+    text-align: left;
+}
+.nav-head h1 p{
+    text-align: right; 
+
+}
+.nav-head p{
+    font-size: 20px;
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-menu a{
+    padding: 10px;
+    margin: 5px 10px;
+}
+/* navbar ends */
+.portfolio{
+    padding: 130px 10px;
+    /* position: relative; */
+    text-align: center;
+}
+
+.portfolio .top-wh{
+    /* position: absolute; */
+    right: 120px;
+    width: 120px;
+    transition: transform 2s;
+}
+/* .top-wh{
+    margin: 150px;
+    width: 120px;
+    transition: transform 2s;
+.top-wh:hover{
+    left: 150px;
+    transform:rotate(360deg);} */
+
+.bottom-wh{
+        margin: 150px;
+        width: 120px;
+        transition: transform 2s;
+  }
+ .bottom-wh:hover{
+        width: 151px;
+        transform:rotate(360deg);
+ }
+        /* about me starts */
+.img1 img{
+    margin-top: 100px;
+    width: 250px;
+    height: 250px;
+}
+.about-desc p{
+    text-align: left;
+}
+/* about me starts */
+/* profession stars */
+
+.work-experiance{
+     /* padding: 2px 5px; */
+          }
+ /* profession ends */
+ /* achievement */
+.achievement{
+  padding-right: 50px;
+ }
+ .contact-me button{
+     width: 100%;
+ }
+  /* for centering */
+  .contact-link{
+      position: relative;
+  }
+  .contact-link h2{
+    left: 50px;}
+  .social-media{
+      top: 70%;
+      /* position: absolute;
+      margin-top: 100px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% -50%); */
+  }
+
+          /* achievement ends */
